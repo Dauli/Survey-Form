@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="A survey form of FCC made by 
+	Alexis Ange Dauli">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		@media screen and (min-width: 100px) and (max-width: 680px) {
+			.item {
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 15px;
+				text-align: center;
+			}
+			.inputW {
+				width: 150px;
+				height: 25px;
+			}
+			.itemLeft {
+				text-align: center;
+			}
+			.item > textarea {
+				height: 80px;
+				width: 150px;
+			}
+			.checbox {
+        		text-align: justify;
+      		}
+		}	
+	</style>
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+	</header>
+	<main>
+		<p id="description">
+			Let us know how we can improve FreeCodeCamp
+		</p>
+		
+		<div>
+			<form id="survey-form" >
+				<div class="container">
+					<div class="item itemLeft">
+						<label id="name-label">
+							*Name:
+						</label>
+					</div>
+					<div class="item">
+						<input id="name" type="text" name="name" 
+						class="inputW"	
+						placeholder="Enter your name" required>
+					</div>
+					<br><br>
+
+					<div class="item itemLeft" >
+						<label id="email-label">
+							*Email: 
+						</label>
+					</div>
+					<div class="item">
+						<input id="email" type="email" name="email" 
+						class="inputW" 
+						placeholder="Enter your Email" required>
+					</div>
+					<br><br>
+					
+					<div class="item itemLeft">
+						<label id="number-label">
+							*Age: 
+						</label>
+					</div>
+					<div class="item">
+						<input id="number" class="inputW" 
+						type="number" type="range" min="1" max="65"
+						name="age" placeholder="Age" required>
+					</div>
+					<br><br>
+					
+					<div class="item itemLeft">
+						Which option best discribe your current role?
+					</div>
+					<div class="item">
+						<select id="dropdown" class="inputW">
+							<option value="Student">Student</option>
+							<option value="Developer">Developer</option>
+							<option value="Employer">Employer</option>
+							<option value="Employee">Employee</option>
+							<option value="Prefer not to say">
+								Prefer not to say
+							</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<br><br><br>
+					
+					<div class="item itemLeft">
+						How luckly you would like to recommand Free Code Camp to friends?
+					</div>
+					<div class="item">
+						<input type="radio" name="recommand" value="Definitly">
+						<label for="Definitly">Definitly</label>
+						<br>
+						<input type="radio" name="recommand" value="Maybe">
+						<label for="Maybe">Maybe</label>
+						<br>
+						<input type="radio" name="recommand" value="Not sure">
+						<label for="Not sure">Not sure</label><br><br>
+					</div>
+					<br><br><br>
+					
+					<div class="item itemLeft">
+						What do you like most in FCC: 
+					</div>
+					<div class="item">
+						<select required class="inputW">
+							<option value="" disabled selected>
+								Select an option
+							</option>
+							<option value="Challenges">Challenges</option>
+							<option value="Projects">Projects</option>
+							<option value="Community">Community</option>
+							<option value="Open-source">Open Source</option>
+						</select>
+					</div>
+					<br><br><br>
+						
+					<div class="item itemLeft">
+						Things that should be improved in the future (check all that apply):
+					</div>
+					<div class="item checbox">
+						<input type="checkbox" name="front-end"
+						value="Front-end">
+						<label for="front-end">Front end projects</label><br>
+
+						<input type="checkbox" name="back-end"
+						value="back-end">
+						<label for="back-end">Back end projects</label><br>
+
+						<input type="checkbox" name="data"
+						value="data">
+						<label for="data">Data Visualisation</label><br>
+
+						<input type="checkbox" name="Challenges"
+						value="Challenges">
+						<label for="Challenges">Challenges</label><br>
+
+						<input type="checkbox" name="Open-source"
+						value="Open-source">
+						<label for="Open-source">Open Source Community</label><br>
+
+						<input type="checkbox" name="gitter"
+						value="gitter">
+						<label for="gitter">Gitter help rooms</label><br>
+
+						<input type="checkbox" name="videos"
+						value="videos">
+						<label for="videos">Videos</label><br>
+
+						<input type="checkbox" name="meetups"
+						value="meetups">
+						<label for="meetups">City Meetups</label><br>
+
+						<input type="checkbox" name="wiki"
+						value="wiki">
+						<label for="wiki">Wiki</label><br>
+
+						<input type="checkbox" name="forum"
+						value="forum">
+						<label for="forum">Forum</label><br>
+
+						<input type="checkbox" name="courses"
+						value="courses">
+						<label for="courses">Additional Courses</label>
+						<br><br>
+					</div>
+					<br><br><br>
+
+					<div class="item itemLeft">
+						Any comment or suggetions?
+					</div><br><br>
+					<div class="item">
+						<textarea rows="3" cols="28">
+							Enter your comment here...
+						</textarea>
+					</div>
+					<br><br><br>
+				</div>
+				<div class="button">
+					<button id="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+			
+	</main>
+
+	<footer>
+		by Alexis Ange Dauli
+	</footer>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
